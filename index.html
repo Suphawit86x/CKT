@@ -106,7 +106,6 @@
       border-radius: 5px;
       cursor: pointer;
       transition: 0.2s;
-      backdrop-filter: blur(0px);
     }
     .copy-btn:hover { background: rgba(139,0,0,0.6); }
     .footer {
@@ -143,43 +142,41 @@
     </div>
 
     <div class="menu">
-      <button class="menu-btn active" onclick="showSection('section1', this)">ประมวลกฎหมายอาญาทหารและตำรวจ</button>
-      <button class="menu-btn" onclick="showSection('section2', this)">พระราชบัญญัติว่าด้วยวินัยทหารและตำรวจ</button>
-      <button class="menu-btn" onclick="showSection('section3', this)">รัฐธรรมนูญแห่งราชอาณาจักรไทย</button>
+      <button class="menu-btn active" onclick="showSection('section1', this)">ประมวลกฎหมายอาญา</button>
+      <button class="menu-btn" onclick="showSection('section5', this)">พระราชบัญญัติกฎระเบียบ</button>
       <button class="menu-btn" onclick="showSection('section4', this)">ประมวลกฎหมายอาญาไซเบอร์</button>
-      <button class="menu-btn" onclick="showSection('section5', this)">นโยบายรัฐมนตรีกระทรวงกลาโหม</button>
-      <button class="menu-btn" onclick="showSection('section6', this)">พระราชบัญญัติกฎระเบียบ</button>
+      <button class="menu-btn" onclick="showSection('section2', this)">พระราชบัญญัติว่าด้วยวินัย</button>
+      <button class="menu-btn" onclick="showSection('section3', this)">รัฐธรรมนูญแห่งราชอาณาจักรไทย</button>
     </div>
 
     <div class="content">
 
-      <!-- SECTION 1 -->
       <div class="law-section active" id="section1">
-        <h2 class="section-title">ประมวลกฎหมายอาญาทหารและตำรวจ</h2>
+        <h2 class="section-title">ประมวลกฎหมายอาญา</h2>
         <div class="article">
           <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑ ชื่อพระราชบัญญัติ</div>
-          <div class="article-content">พระราชบัญญัติประมวลกฎหมายอาญาทหารและตำรวจ พ.ศ. ๒๕๖๙</div>
+          <div class="article-number">มาตรา ๑ ชื่อประมวลกฎหมาย</div>
+          <div class="article-content">ประมวลกฎหมายอาญา พ.ศ. ๒๕๖๙</div>
         </div>
         <div class="article">
           <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
           <div class="article-number">มาตรา ๒ บังคับใช้</div>
-          <div class="article-content">พระราชบัญญัตินี้ให้ใช้บังคับตั้งแต่วันถัดจากวันประกาศในราชกิจจานุเบกษาเป็นต้นไป</div>
+          <div class="article-content">ประมวลกฎหมายนี้ให้ใช้บังคับตั้งแต่วันถัดจากวันประกาศในราชกิจจานุเบกษาเป็นต้นไป</div>
         </div>
         <div class="article">
           <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
           <div class="article-number">มาตรา ๓ วันที่บังคับใช้</div>
-          <div class="article-content">ประมวลกฎหมายอาญาท้ายพระราชบัญญัตินี้ให้ใช้บังคับ ตั้งแต่วันที่ ๕ มกราคม พ.ศ. ๒๕๖๙ เป็นต้นไป</div>
+          <div class="article-content">ประมวลกฎหมายอาญาท้ายประมวลกฎหมายนี้ให้ใช้บังคับ ตั้งแต่วันที่ ๕ มกราคม พ.ศ. ๒๕๖๙ เป็นต้นไป</div>
         </div>
         <div class="article">
           <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
           <div class="article-number">มาตรา ๔ กฎหมายเดิม</div>
-          <div class="article-content">เมื่อประกาศบังคับใช้ประมวลกฎหมายอาญาทหารและตำรวจ พ.ศ. ๒๕๖๙ นี้แล้ว ให้ยกเลิกประมวลกฎหมายอาญาทหารเดิมที่เคยบังคับใช้ทั้งหมด</div>
+          <div class="article-content">เมื่อประกาศบังคับใช้ประมวลกฎหมายอาญา พ.ศ. ๒๕๖๙ นี้แล้ว ให้ยกเลิกประมวลกฎหมายอาญาเดิมที่เคยบังคับใช้ทั้งหมด</div>
         </div>
         <div class="article">
           <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
           <div class="article-number">มาตรา ๕ ดุลพินิจการบังคับใช้กฎหมาย</div>
-          <div class="article-content">ผู้ใดกระทำความผิดอย่างใด นอกจากที่บัญญัติไว้ในประมวลกฎหมายอาญาทหารและตำรวจนี้ ให้รับอาญาตามลักษณะจารีตประเพณี หรือใช้ดุลพินิจของศาลรัฐธรรมนูญเป็นอำนาจสูงสุด ถ้ากฎหมายนี้มิได้บัญญัติไว้ให้เป็นอย่างอื่น</div>
+          <div class="article-content">ผู้ใดกระทำความผิดอย่างใด นอกจากที่บัญญัติไว้ในประมวลกฎหมายอาญานี้ ให้รับอาญาตามลักษณะจารีตประเพณี หรือใช้ดุลพินิจของศาลรัฐธรรมนูญเป็นอำนาจสูงสุด ถ้ากฎหมายนี้มิได้บัญญัติไว้ให้เป็นอย่างอื่น</div>
         </div>
         <div class="article">
           <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
@@ -198,7 +195,7 @@
             "เจ้าพนักงาน" หมายความว่า ข้าราชการผู้ซึ่งสังกัดและปฏิบัติหน้าที่ในหน่วยงานใดหน่วยงานหนึ่งภายในแมพ<br>
             "ผู้ต้องสงสัย" หมายความว่า บุคคลที่ยังมิได้ถูกยืนยันว่ากระทำความผิด แต่มีการสืบสวนหรือสอบสวนแล้วว่ามีส่วนเกี่ยวข้องกับการกระทำความผิด<br>
             "ผู้ต้องหา" หมายความว่า บุคคลที่ได้รับการยืนยันแล้วว่ากระทำความผิด แต่ยังมิได้เข้าสู่กระบวนการพิจารณาคดีของศาล<br>
-            "จำเลย" หมายความว่า ข้าราชการทหารหรือตำรวจที่ได้รับการยืนยันว่ากระทำความผิด และอยู่ในระหว่างการพิจารณาคดีของศาล<br>
+            "จำเลย" หมายความว่า ข้าราชการที่ได้รับการยืนยันว่ากระทำความผิด และอยู่ในระหว่างการพิจารณาคดีของศาล<br>
             "คุมขัง" หมายความว่า การควบคุมตัว กักขัง หรือจำคุกโดยชอบด้วยกฎหมาย<br>
             "โดยทุจริต" หมายความว่า การแสวงหาประโยชน์ที่มิควรได้โดยชอบด้วยกฎหมาย เพื่อตนเองหรือเพื่อผู้อื่น
           </div>
@@ -207,7 +204,7 @@
         <div class="article">
           <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
           <div class="article-number">มาตรา ๘ กำหนดประเภทอัตราโทษ</div>
-          <div class="article-content">เมื่อประมวลกฎหมายอาญาทหารและตำรวจนี้มีผลใช้บังคับแล้ว กฎหมายใดที่กำหนดโทษโดยอ้างถึงโทษใดๆ ในกฎหมายลักษณะอาญาไว้ ให้ถือว่ากฎหมายนั้นได้อ้างถึงโทษตามที่บัญญัติไว้ในประมวลกฎหมายอาญานี้ ดังต่อไปนี้</div>
+          <div class="article-content">เมื่อประมวลกฎหมายอาญานี้มีผลใช้บังคับแล้ว กฎหมายใดที่กำหนดโทษโดยอ้างถึงโทษใดๆ ในกฎหมายลักษณะอาญาไว้ ให้ถือว่ากฎหมายนั้นได้อ้างถึงโทษตามที่บัญญัติไว้ในประมวลกฎหมายอาญานี้ ดังต่อไปนี้</div>
         </div>
         <div class="article">
           <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
@@ -410,437 +407,7 @@
         </div>
       </div>
 
-      <!-- SECTION 2 -->
-      <div class="law-section" id="section2">
-        <h2 class="section-title">พระราชบัญญัติว่าด้วยวินัยทหารและตำรวจ</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑ ชื่อพระราชบัญญัติ</div>
-          <div class="article-content">"พระราชบัญญัติว่าด้วยวินัยทหารและตำรวจ พุทธศักราช ๒๕๖๙"</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๒ บังคับใช้</div>
-          <div class="article-content">ให้ใช้พระราชบัญญัตินี้ตั้งแต่วันประกาศในราชกิจจานุเบกษาเป็นต้นไป</div>
-        </div>
-        <h2 class="section-title">หมวด ๑ : ว่าด้วยวินัย</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๓ วินัยทหารและตำรวจคือ</div>
-          <div class="article-content">วินัยทหารและตำรวจนั้น คือ การที่ข้าราชการทหารและตำรวจต้องประพฤติตามแบบธรรมเนียมของราชการ</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๔ วินัยคือสิ่งสำคัญที่สุดของข้าราชการทหารและตำรวจ</div>
-          <div class="article-content">
-            วินัยเป็นหลักสำคัญที่สุดสำหรับข้าราชการทหารและตำรวจ เพราะฉะนั้นข้าราชการทุกคนจักต้องรักษาโดยเคร่งครัดอยู่เสมอ ผู้ใดฝ่าฝืนให้ถือว่าผู้นั้นกระทำผิด ตัวอย่างการกระทำผิดวินัย มีดังต่อไปนี้<br>
-            ๑. ดื้อดึง ขัดขืน หลีกเลี่ยง หรือละเลยไม่ปฏิบัติตามคำสั่งของผู้บังคับบัญชาเหนือตน<br>
-            ๒. ไม่รักษาระเบียบการเคารพระหว่างผู้ใหญ่ผู้น้อย<br>
-            ๓. ไม่รักษามารยาทให้ถูกต้องตามแบบธรรมเนียมของทหารและตำรวจ<br>
-            ๔. ก่อให้แตกความสามัคคีในหมู่ข้าราชการ<br>
-            ๕. เกียจคร้าน ละทิ้ง หรือเลินเล่อต่อหน้าที่ราชการ<br>
-            ๖. กล่าวคำเท็จหรือให้ข้อมูลที่บิดเบือนต่อผู้บังคับบัญชา<br>
-            ๗. ใช้กิริยาวาจาไม่สมควร หรือประพฤติไม่สมควร
-          </div>
-        </div>
-        <h2 class="section-title">หมวด ๒ : อำนาจลงทัณฑ์</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๕ ทัณฑ์ที่จะลงแก่ผู้กระทำผิด</div>
-          <div class="article-content">
-            ต่อวินัยทหารและตำรวจดังกล่าวไว้ในหมวด ๑ นั้น ให้กำหนดเป็น ๓ สถาน คือ<br>
-            ๑. ภาคทัณฑ์<br>
-            ๒. ธำรงวินัย<br>
-            ๓. จำคุก
-          </div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๖ ความหมายของทัณฑ์แต่ละสถาน</div>
-          <div class="article-content">
-            ภาคทัณฑ์ คือ การลงโทษในกรณีที่มีเหตุควรปราณี โดยแสดงความผิดของผู้นั้นให้ปรากฏหรือให้ทำทัณฑ์บนไว้ เช่น บันทึกบัญชีวินัยเลว ซึ่งสามารถยื่นอุทธรณ์ได้<br>
-            ธำรงวินัย คือ การลงทัณฑ์ทางร่างกาย เช่น กระโดดตบ โดยต้องได้รับคำสั่งจากผู้มีอำนาจลงทัณฑ์โดยตรง<br>
-            จำคุก คือ การควบคุมตัวให้อยู่ในความดูแลของเรือนจำทหาร หรือห้องกักของสถานีตำรวจตามแต่กรณี
-          </div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๗ ผู้ที่มีอำนาจลงทัณฑ์</div>
-          <div class="article-content">
-            ผู้มีอำนาจบังคับบัญชาซึ่งลงทัณฑ์แก่ผู้กระทำผิดได้นั้น คือ<br>
-            ๑. ผู้บังคับบัญชาฝ่ายทหารและตำรวจ<br>
-            ๒. เจ้าพนักงานฝ่ายรัฐธรรมนูญ<br>
-            ๓. เจ้าพนักงานฝ่ายบังคับใช้กฎหมาย เช่น สารวัตรทหาร/สารวัตรตำรวจ เป็นต้น<br>
-            ๔. ผู้ที่ได้รับมอบอำนาจจาก ๓ ข้อข้างต้น ให้ทำได้เฉพาะขอบเขตที่กำหนดไว้เท่านั้น<br>
-            ๕. ผู้บังคับบัญชาระดับกรมหรือฝ่ายบริหาร สามารถลงทัณฑ์ได้เฉพาะบุคคลซึ่งอยู่ในสังกัดของตนเท่านั้น
-          </div>
-        </div>
-        <h2 class="section-title">หมวด ๓ : ระเบียบการแต่งกาย</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๘ เครื่องแบบทหารและตำรวจหมายถึง</div>
-          <div class="article-content">
-            เครื่องแต่งกายทั้งหลายที่ได้กำหนดให้ข้าราชการทหารและตำรวจแต่ง เครื่องแบบย่อมประกอบด้วย หมวก เสื้อ กางเกง รองเท้า เครื่องหมายยศ เหล่า จำพวก สังกัด และอื่นๆ กับเครื่องประกอบต่างๆ โดยมีข้อบังคับในการแต่งเครื่องแบบดังนี้<br>
-            ๑. ข้าราชการทหาร/ตำรวจทุกนายต้องสวมเครื่องแบบตามสังกัดของตนทุกครั้งเมื่ออยู่ในเขตพื้นที่ราชการ (หากฝ่าฝืนมีโทษจำคุกไม่ต่ำกว่า ๑ วัน)<br>
-            ๒. พระราชวงศ์ และรัฐบาล สามารถแต่งเครื่องแบบทหารหรือตำรวจได้ พระราชวงศ์สามารถแต่งชุดไทยได้ และรัฐบาลสามารถแต่งชุดสูทได้ หากแต่งชุดอื่นที่ไม่ได้ระบุไว้ข้างต้น (กระโดดตบไม่ต่ำกว่า ๒๐ ครั้ง)<br>
-            ๓. ผู้ที่แต่งกายแล้วแอบอ้างว่าสังกัดหน่วยนั้นๆ โดยมิได้รับอนุญาต (มีโทษจำคุกไม่ต่ำกว่า ๑ วัน)<br>
-            ๔. กำหนดทรงผมข้าราชการทหาร/ตำรวจชาย ทรงผมห้ามยาวเกินหมวกเบเร่ต์หรือหม้อตาล ห้ามไว้ทรงผมยาว ทรงผมของแมพถือว่าเป็นทรงผมที่ถูกต้องที่สุด (หากฝ่าฝืนมีโทษจำคุกไม่ต่ำกว่า ๑ วัน)<br>
-            ๕. กำหนดทรงผมข้าราชการทหาร/ตำรวจหญิง ทรงผมห้ามยาวเกินลำคอ สามารถมัดรวบผมหรือไม่มัดรวบผมก็ได้ ทรงผมของแมพถือว่าเป็นทรงผมที่ถูกต้องที่สุด (หากฝ่าฝืนมีโทษจำคุกไม่ต่ำกว่า ๑ วัน)<br>
-            ๖. ข้าราชการทหาร/ตำรวจทั้งชายและหญิง ห้ามย้อมสีผมเป็นอันขาด ต้องเป็นสีดำโดยธรรมชาติเท่านั้น (หากฝ่าฝืนมีโทษจำคุกไม่ต่ำกว่า ๑ วัน)<br>
-            ๗. พระราชวงศ์ และรัฐบาล สามารถย้อมสีผมและสวมใส่ทรงผมใดก็ได้<br>
-            ๘. ข้าราชการทหาร/ตำรวจทุกนาย รวมถึงพระราชวงศ์และรัฐบาล ห้ามแต่งเครื่องประดับที่ผิดธรรมชาติของมนุษย์ปกติ เช่น หูแมว หางแมว ปีก เป็นต้น (กระโดดตบไม่ต่ำกว่า ๒๐ ครั้ง)
-          </div>
-        </div>
-        <h2 class="section-title">หมวด ๔ : ระเบียบการใช้คำสั่งพิเศษ (Commands)</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๙ ว่าด้วยระเบียบคำสั่งพิเศษ</div>
-          <div class="article-content">ว่าด้วยการใช้คำสั่งพิเศษ (Commands) โดยให้ใช้สำหรับการฝึก การจัดกิจกรรม การอำนวยความสะดวกในการปฏิบัติหน้าที่ และการกระทำที่เป็นประโยชน์ต่อหน่วยงานและกองทัพเท่านั้น โดยไม่ก่อให้เกิดความเดือดร้อนแก่ข้าราชการในสังกัด</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๐ ระเบียบการใช้คำสั่งพิเศษ</div>
-          <div class="article-content">
-            ว่าด้วยการใช้คำสั่งพิเศษ (Commands) โดยให้ใช้สำหรับการฝึก การจัดกิจกรรม การอำนวยความสะดวกในการปฏิบัติหน้าที่ และการกระทำที่เป็นประโยชน์ต่อหน่วยงานและกองทัพเท่านั้น คำสั่งพิเศษที่ไม่ได้ระบุไว้ในรายการที่กำหนด ถือว่าไม่ได้รับอนุญาตให้ใช้โดยปริยาย<br>
-            ๑. :h :m ต่างๆ คือ การประกาศแบบป็อปอัพ หากใช้ในทางที่ผิดอาทิเช่น :hr แว่นมานี่มา มีโทษดังนี้<br>
-            - ครั้งที่ ๑ ตักเตือน<br>
-            - ครั้งที่ ๒ ธำรงวินัย หรือ จำคุก<br>
-            - ครั้งที่ ๓ บันทึกบัญชีวินัยเลว หากร้ายแรง สามารถ ปลดการอนุมัติใช้คำสั่งพิเศษ<br>
-            - หากมีครั้งต่อๆไป ให้ขึ้นอยู่กับดุลพินิจของศาล<br>
-            ๒. :tp (someone) me คือการดึงตัวผู้เล่น กล่าวคือหากใช้ในทางที่ผิด อาทิเช่น :tp playerA me โดยไม่มีเหตุอันสมควร มีโทษดังนี้<br>
-            - ครั้งที่ ๑ ตักเตือน<br>
-            - ครั้งที่ ๒ ธำรงวินัย หรือ จำคุก<br>
-            - ครั้งที่ ๓ บันทึกบัญชีวินัยเลว หากร้ายแรง สามารถ ปลดการอนุมัติใช้คำสั่งพิเศษ<br>
-            - หากมีครั้งต่อๆไป ให้ขึ้นอยู่กับดุลพินิจของศาล<br>
-            ๓. :team การย้ายทีมหรือเหล่าสังกัด กล่าวคือหากใช้ในทางที่ผิด อาทิเช่น :team me กองบัญชาการ โดยที่ตนเองมิได้มีสิทธิ์อยู่ใน Team ของกองบัญชาการ<br>
-            - ครั้งที่ ๑ ตักเตือน<br>
-            - ครั้งที่ ๒ ธำรงวินัย จำคุก หรือ บันทึกบัญชีวินัยเลว<br>
-            - ครั้งที่ ๓ ปลดการอนุมัติใช้คำสั่งพิเศษ หรือ ลดอัตราชั้นยศ<br>
-            - หากมีครั้งต่อๆไป ให้ขึ้นอยู่กับดุลพินิจของศาล
-          </div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๐ วรรค (๑) ประเภทคำสั่งประกาศ</div>
-          <div class="article-content">
-            คำสั่งประกาศแบ่งออกเป็น ๓ ประเภท ดังต่อไปนี้<br><br>
-            (๑) คำสั่งหมวด :h ให้ใช้สำหรับการปฏิบัติการระยะประชิด (CQB) เท่านั้น รวมถึงการรายงานสถานการณ์ การแจ้งสกอร์ หรือการแสดงสัญลักษณ์ทางยุทธวิธี ห้ามนำไปใช้ในกิจกรรมอื่นที่ไม่เกี่ยวข้องกับการรบหรือการฝึกโดยเด็ดขาด<br><br>
-            (๒) คำสั่งหมวด :n ให้ใช้ได้เฉพาะเจ้าหน้าที่ในตำแหน่ง "ครูฝึกกรมยุทธ" เท่านั้น ใช้สำหรับการประกาศคำสั่ง ข้อชี้แจง หรือข้อมูลที่เกี่ยวข้องกับการฝึก การอบรม และกิจกรรมทางยุทธวิธี<br><br>
-            (๓) คำสั่งหมวด :m ให้ใช้ได้เฉพาะหน่วยงานระดับกองบัญชาการกองทัพบก และกองทัพไทย ใช้สำหรับการประกาศคำสั่งระดับสูง คำสั่งเร่งด่วน หรือข้อมูลที่มีผลกระทบต่อกำลังพลโดยรวม<br><br>
-            ผู้ใดฝ่าฝืนหรือไม่ปฏิบัติตามระเบียบนี้ ให้ถือเป็นความผิดทางวินัย โทษสำหรับผู้กระทำผิด ให้พิจารณาตามความร้ายแรงแห่งการกระทำ<br><br>
-            บทกำหนดโทษ<br>
-            (๑) ลงโทษทางวินัย โดยการธำรงวินัย (JJS) ตั้งแต่ ๑๐๐ ถึง ๒๐๐ ครั้ง หรือ<br>
-            (๒) จำคุกเป็นระยะเวลาไม่เกิน ๒๔ ชั่วโมง<br><br>
-            ในกรณีที่การกระทำผิดมีลักษณะร้ายแรง หรือกระทำซ้ำ ให้บันทึกประวัติเป็น "บัญชีวินัยเลว" และหากเห็นสมควร อาจมีคำสั่งลดอัตราชั้นยศ เพิกถอนสิทธิในการใช้คำสั่งประกาศ
-          </div>
-        </div>
-      </div>
-
-      <!-- SECTION 3 -->
-      <div class="law-section" id="section3">
-        <h2 class="section-title">รัฐธรรมนูญแห่งราชอาณาจักรไทย</h2>
-        <h2 class="section-title">หมวด ๑ : บททั่วไป</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑ ราชอาณาจักรเป็นหนึ่งเดียวแบ่งแยกมิได้</div>
-          <div class="article-content">แมพชีวิตในรั้วทหารไทยเป็นราชอาณาจักรอันหนึ่งอันเดียว จะแบ่งแยกมิได้</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๒ ระบอบการปกครอง</div>
-          <div class="article-content">แมพชีวิตในรั้วทหารไทยมีการปกครองระบอบประชาธิปไตยอันมีพระมหากษัตริย์ทรงเป็นประมุข</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๓ อำนาจอธิปไตย</div>
-          <div class="article-content">อำนาจอธิปไตยเป็นของปวงชนชาวแมพชีวิตในรั้วทหารไทย พระมหากษัตริย์ผู้ทรงเป็นประมุขทรงใช้อำนาจนั้นผ่านคณะรัฐมนตรี ตามบทบัญญัติแห่งรัฐธรรมนูญ</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๔ สิทธิเสรีภาพ</div>
-          <div class="article-content">ศักดิ์ศรีความเป็นมนุษย์ สิทธิ เสรีภาพ และความเสมอภาคของบุคคลย่อมได้รับความคุ้มครอง ปวงชนชาวไทยย่อมได้รับความคุ้มครองตามรัฐธรรมนูญนี้เสมอกัน</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๕ รัฐธรรมนูญเป็นกฎหมายสูงสุดของแมพ</div>
-          <div class="article-content">รัฐธรรมนูญเป็นกฎหมายสูงสุดของแมพ บทบัญญัติใดของกฎหมาย กฎ ข้อบังคับ หรือการกระทำใด ขัดหรือแย้งต่อรัฐธรรมนูญ บทบัญญัติหรือการกระทำนั้นเป็นอันใช้บังคับมิได้ เมื่อไม่มีบทบัญญัติแห่งรัฐธรรมนูญนี้บังคับแก่กรณีใด ให้กระทำการนั้นหรือวินิจฉัยกรณีนั้นไปตามประเพณีการปกครองของแมพ</div>
-        </div>
-        <h2 class="section-title">หมวด ๒ : พระมหากษัตริย์</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๖ ฐานะพระมหากษัตริย์</div>
-          <div class="article-content">องค์พระมหากษัตริย์ทรงดำรงอยู่ในฐานะผู้เล่นภายในแมพเท่านั้น ไม่สามารถกระทำการอันใดภายนอกแมพได้ และทรงอยู่ภายใต้ระเบียบและข้อบังคับภายในแมพทุกประการเช่นเดียวกับผู้เล่นอื่น</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๗ จอมพล</div>
-          <div class="article-content">พระมหากษัตริย์ทรงดำรงตำแหน่งจอมพล</div>
-        </div>
-        <h2 class="section-title">หมวด ๓ : สิทธิและเสรีภาพของแมพชีวิตในรั้วทหารไทย</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๘ สิทธิเสรีภาพของข้าราชการทหารและตำรวจ</div>
-          <div class="article-content">
-            ๑. สิทธิขั้นพื้นฐานตามรัฐธรรมนูญ<br>
-            ทุกคนมีสิทธิและเสรีภาพตามที่รัฐธรรมนูญคุ้มครองไว้ หากกฎหมายไม่ได้บัญญัติห้าม ก็สามารถกระทำได้ แต่ต้องไม่กระทบต่อความมั่นคงของรัฐ ความสงบเรียบร้อย ศีลธรรมอันดี หรือสิทธิของผู้อื่น<br>
-            ๒. สิทธิที่กฎหมายลูกยังไม่ออก แต่ยังสามารถใช้ได้<br>
-            ถ้ารัฐธรรมนูญให้สิทธิไว้ แม้กฎหมายลูกยังไม่ประกาศใช้ บุคคลก็ยังคงใช้สิทธินั้นได้ตามเจตนารมณ์ของรัฐธรรมนูญ<br>
-            ๓. สามารถอ้างรัฐธรรมนูญเป็นข้อต่อสู้คดีได้<br>
-            หากถูกละเมิดสิทธิ สามารถนำบทบัญญัติรัฐธรรมนูญยื่นต่อศาลหรือใช้เป็นข้อต่อสู้คดีได้<br>
-            ๔. ผู้เสียหายมีสิทธิได้รับการเยียวยา<br>
-            หากถูกละเมิดสิทธิหรือได้รับความเสียหายจากการกระทำผิดของผู้อื่น มีสิทธิได้รับการช่วยเหลือหรือเยียวยาจากรัฐตามกฎหมาย
-          </div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๙ บุคคลย่อมเสมอกันด้วยกฎหมาย</div>
-          <div class="article-content">บุคคลย่อมเสมอกันในกฎหมาย มีสิทธิและเสรีภาพและได้รับความคุ้มครองตามกฎหมายเท่าเทียมกัน</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๐ สิทธิและเสรีภาพด้านร่างกาย</div>
-          <div class="article-content">บุคคลย่อมมีสิทธิและเสรีภาพในชีวิตและร่างกาย การจับและการคุมขังบุคคลจะกระทำมิได้ เว้นแต่มีคำสั่งหรือหมายของศาลหรือมีเหตุอย่างอื่นตามที่กฎหมายบัญญัติ</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๑ สิทธิประชาชนและข้าราชการ</div>
-          <div class="article-content">
-            ๑. มีสิทธิรับทราบและเข้าถึงข้อมูลหรือข่าวสารสาธารณะที่หน่วยงานของรัฐครอบครอง ตามที่กฎหมายบัญญัติ<br>
-            ๒. มีสิทธิเสนอเรื่องร้องทุกข์ต่อหน่วยงานของรัฐ และได้รับแจ้งผลการพิจารณาโดยไม่ชักช้า<br>
-            ๓. มีสิทธิฟ้องร้องหน่วยงานของรัฐให้รับผิดชอบจากการกระทำหรือละเว้นการกระทำของข้าราชการ ไม่ว่าจะดำรงตำแหน่งระดับใด
-          </div>
-        </div>
-        <h2 class="section-title">หมวด ๔ : หน้าที่ของรัฐ</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๒ รัฐต้องพิทักษ์รักษาชาติ</div>
-          <div class="article-content">รัฐต้องพิทักษ์รักษาไว้ซึ่งสถาบันพระมหากษัตริย์ เอกราช อธิปไตย บูรณภาพแห่งอาณาเขตและเขตที่มีสิทธิอธิปไตย เกียรติภูมิและผลประโยชน์ของชาติ ความมั่นคงของรัฐและความสงบเรียบร้อยของประชาชน เพื่อประโยชน์แห่งการนี้ รัฐต้องจัดให้มีการทหาร การตำรวจ การทูต และการข่าวกรองที่มีประสิทธิภาพ กำลังทหารและตำรวจให้ใช้เพื่อประโยชน์ในการพัฒนาประเทศด้วย</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๓ รัฐต้องดูแลในการปฏิบัติตามกฎหมาย</div>
-          <div class="article-content">รัฐต้องดูแลให้มีการปฏิบัติตามและบังคับใช้กฎหมายอย่างเคร่งครัด</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๔ ให้มีพระราชบัญญัติประกอบรัฐธรรมนูญ ดังต่อไปนี้</div>
-          <div class="article-content">
-            ๑. พระราชบัญญัติประมวลกฎหมายอาญาทหารและตำรวจ พ.ศ.๒๕๖๙<br>
-            ๒. พระราชบัญญัติว่าด้วยวินัยทหารและตำรวจ พ.ศ.๒๕๖๙<br>
-            ๓. ประมวลกฎหมายอาญาไซเบอร์ พ.ศ.๒๕๖๙<br>
-            ๔. พระราชบัญญัติตำรวจแห่งชาติ พ.ศ.๒๕๖๘<br>
-            ๕. พระราชบัญญัติว่าด้วยกฎระเบียบภายในแมพ พ.ศ.๒๕๖๙
-          </div>
-        </div>
-        <h2 class="section-title">ส่วนที่ ๒ : ศาลรัฐธรรมนูญ</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๕ อำนาจบทบาท</div>
-          <div class="article-content">ศาลรัฐธรรมนูญถือเป็นศาลสูงสุดในการวินิจฉัยและบังคับใช้กฎหมายทั้งปวงภายในแมพ คำวินิจฉัยของศาลรัฐธรรมนูญให้ถือเป็นที่สุดและผูกพันทุกองค์กร</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๖ เจ้าพนักงานฝ่ายรัฐธรรมนูญ</div>
-          <div class="article-content">
-            เจ้าพนักงานฝ่ายรัฐธรรมนูญประกอบด้วย<br>
-            ๑. ประธานศาลรัฐธรรมนูญ<br>
-            ๒. รองประธานศาลรัฐธรรมนูญ<br>
-            ๓. ตุลาการศาลรัฐธรรมนูญ<br>
-            ๔. กรรมการวิสามัญ<br>
-            ๕. เจ้าหน้าที่ตรวจสอบรัฐธรรมนูญ<br>
-            ๖. เจ้าหน้าที่รัฐธรรมนูญ<br>
-            ๗. เจ้าหน้าที่ธุรการรัฐธรรมนูญ<br>
-            ๘. คณะกรรมการกฎหมายรัฐธรรมนูญ
-          </div>
-        </div>
-        <h2 class="section-title">ส่วนที่ ๓ : คณะรัฐมนตรี</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๗ การบริหารราชการแผ่นดิน</div>
-          <div class="article-content">
-            ในการบริหารราชการแผ่นดิน คณะรัฐมนตรีต้องดำเนินการตามบทบัญญัติแห่งรัฐธรรมนูญ กฎหมาย และนโยบายที่ได้แถลงไว้ต่อการประชุม และต้องปฏิบัติตามหลักเกณฑ์ต่อไปนี้<br>
-            ๑. ปฏิบัติหน้าที่และใช้อำนาจด้วยความซื่อสัตย์ สุจริต เสียสละ โปร่งใส รอบคอบ และระมัดระวัง เพื่อประโยชน์สูงสุดของราชอาณาจักรและประชาชนส่วนรวม<br>
-            ๒. รักษาวินัยในกิจการภายในราชอาณาจักรตามกฎหมายว่าด้วยวินัยทางทหารและตำรวจอย่างเคร่งครัด<br>
-            ๓. ยึดถือและปฏิบัติตามหลักการบริหารกิจการบ้านเมืองที่ดีอย่างสม่ำเสมอ
-          </div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๘ พฤติการณ์ผิดปกติ</div>
-          <div class="article-content">หากนายกรัฐมนตรีมีพฤติการณ์ผิดปกติหรือกระทำการใดๆ ที่สุ่มเสี่ยงต่อการเสื่อมเสียหรือเป็นภัยต่อราชอาณาจักร รัฐมนตรีว่าการกระทรวงกลาโหม ผู้บัญชาการทหารสูงสุด และผู้บัญชาการทหารบก มีอำนาจเรียกประชุมฉุกเฉิน โดยให้รองนายกรัฐมนตรีเป็นพยานในกระบวนการพ้นจากตำแหน่ง</div>
-        </div>
-      </div>
-
-      <!-- SECTION 4 -->
-      <div class="law-section" id="section4">
-        <h2 class="section-title">ประมวลกฎหมายไซเบอร์ พ.ศ.๒๕๖๙</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑ ชื่อประมวลกฎหมาย</div>
-          <div class="article-content">ให้เรียกประมวลกฎหมายนี้ว่า "ประมวลกฎหมายไซเบอร์ พ.ศ.๒๕๖๙"</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๒ วันที่บังคับใช้</div>
-          <div class="article-content">ให้ใช้ประมวลกฎหมายนี้ ตั้งแต่วันที่ ๕ มกราคม พุทธศักราช ๒๕๖๙ เป็นต้นไป</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๓ บทนิยามศัพท์</div>
-          <div class="article-content">
-            "การรักษาความมั่นคงปลอดภัยไซเบอร์" หมายความว่า มาตรการหรือการดำเนินการที่กำหนดขึ้น เพื่อป้องกัน รับมือ และลดความเสี่ยงจากภัยคุกคามทางไซเบอร์ทั้งจากภายในและภายนอกประเทศ อันกระทบต่อความมั่นคงของรัฐ ความมั่นคงทางทหารและตำรวจ และความสงบเรียบร้อย ภายในประเทศ<br>
-            "ภัยคุกคามทางไซเบอร์" หมายความว่า การกระทำหรือการดำเนินการใดๆ โดยมิชอบ โดยใช้คอมพิวเตอร์หรือระบบคอมพิวเตอร์หรือโปรแกรมไม่พึงประสงค์ โดยมุ่งหมายให้เกิดการประทุษร้ายต่อระบบคอมพิวเตอร์ ข้อมูลคอมพิวเตอร์ หรือข้อมูลอื่นที่เกี่ยวข้อง อันเป็นภัยอันตรายที่จะก่อให้เกิดความเสียหายหรือส่งผลกระทบต่อการทำงานของระบบนั้นๆ
-          </div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๔ ดุลพินิจการบังคับใช้กฎหมาย</div>
-          <div class="article-content">ผู้ใดกระทำความผิดอย่างใด นอกจากที่บัญญัติไว้ในประมวลกฎหมายไซเบอร์นี้ ให้รับอาญาตามลักษณะจารีตประเพณีหรือตามดุลพินิจของศาล หากกฎหมายนี้มิได้บัญญัติไว้เป็นอย่างอื่น ให้นำคำพิพากษาของศาลรัฐธรรมนูญที่ถึงที่สุดแล้วมาใช้เป็นบรรทัดฐานในการตัดสินคดีอื่นๆ ได้โดยอนุโลม</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๕ หมายเรียกไซเบอร์</div>
-          <div class="article-content">หากหน่วยงานที่เกี่ยวข้องได้ทำการสืบสวนสอบสวนอาชญากรรมทางเทคโนโลยี และได้ออกหมายเรียกแล้ว หากผู้ต้องหายังไม่มาตามกำหนด ให้ถือว่าเป็นการหลบหนี มีโทษจำคุก และส่งเรื่องให้ศาลรัฐธรรมนูญดำเนินการต่อไป</div>
-        </div>
-        <h2 class="section-title">ภาค ๑ : การกำหนดประเภทอัตราโทษ</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๖ ความผิดสถานเบา</div>
-          <div class="article-content">
-            - ตักเตือน<br>
-            - บันทึกคดีความผิด<br>
-            - กระโดดตบ ไม่ต่ำกว่า ๕๐ แต่ไม่เกิน ๑๐๐<br>
-            - จำคุก ๕ นาที
-          </div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๗ ความผิดสถานกลาง</div>
-          <div class="article-content">
-            - ตักเตือน<br>
-            - บันทึกคดีความผิด<br>
-            - กระโดดตบ ไม่ต่ำกว่า ๑๐๐ แต่ไม่เกิน ๒๐๐<br>
-            - จำคุก ๑๐ นาที
-          </div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๘ ความผิดสถานหนัก</div>
-          <div class="article-content">- ให้เป็นไปตามดุลพินิจของศาลรัฐธรรมนูญ</div>
-        </div>
-        <h2 class="section-title">ภาค ๒ : ข้อบังคับต่างๆ</h2>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๙ หมิ่นประมาท</div>
-          <div class="article-content">การกล่าวหรือกระทำการอันทำให้บุคคลอื่น กรม หรือหน่วยงานใดเกิดความเสื่อมเสียชื่อเสียง (โทษสถานเบา-โทษสถานกลาง)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๐ ใช้วาจาไม่เหมาะสมในหมู่คณะ</div>
-          <div class="article-content">การใช้ถ้อยคำที่ไม่สุภาพหรือไม่เหมาะสมในการสื่อสารระหว่างกัน (โทษสถานเบา-โทษสถานกลาง)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๑ ละเมิดสิทธิส่วนบุคคล</div>
-          <div class="article-content">การกระทำใดอันเป็นการละเมิดหรือก้าวก่ายสิทธิส่วนบุคคลของผู้อื่น (โทษสถานเบา-โทษสถานกลาง)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๒ นำข้อมูลอันเป็นเท็จเข้าสู่ระบบ</div>
-          <div class="article-content">การนำเข้าหรือเผยแพร่ข้อมูลอันเป็นเท็จเข้าสู่ระบบคอมพิวเตอร์หรือสื่อสาธารณะ อันอาจก่อให้เกิดความเสียหายแก่บุคคลหรือหน่วยงาน (โทษสถานเบา-โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๓ สร้างความเข้าใจผิด</div>
-          <div class="article-content">การนำเสนอข้อมูลหรือข้อความที่บิดเบือนความจริง อันก่อให้เกิดความเข้าใจผิดในหมู่ข้าราชการหรือสาธารณชน (โทษสถานเบา-โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๔ แบ่งปันสื่อที่ไม่เหมาะสม</div>
-          <div class="article-content">การเผยแพร่หรือส่งต่อเนื้อหาลามกอนาจาร สื่อที่ไม่เหมาะสม หรือเนื้อหาที่เกี่ยวข้องกับสิ่งเสพติดทุกประเภทผ่านช่องทางออนไลน์ (โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๕ ส่งสแปมข้อความ</div>
-          <div class="article-content">การส่งข้อความที่ไม่พึงประสงค์ ซ้ำๆ หรือไม่เกี่ยวข้องกับการปฏิบัติหน้าที่จนก่อให้เกิดความรำคาญหรือรบกวนผู้อื่น (โทษสถานเบา-โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๖ การบังคับขู่เข็ญ</div>
-          <div class="article-content">การบังคับ ขู่เข็ญ หรือกดดันทางช่องทางออนไลน์ เพื่อให้ผู้อื่นยินยอมกระทำการใดๆ อันไม่สมัครใจ ก่อให้เกิดความหวาดกลัวหรือความเดือดร้อน (โทษสถานกลาง-โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๗ แชร์ลิงก์ที่ไม่เหมาะสมหรือแมพที่ติด Blacklist</div>
-          <div class="article-content">การเผยแพร่หรือส่งต่อลิงก์ที่มีเนื้อหาไม่เหมาะสม หรือลิงก์ไปยังแมพที่ถูกขึ้นบัญชีดำ (Blacklist) (โทษสถานกลาง-โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๘ ปลอมแปลงเอกสาร</div>
-          <div class="article-content">การปลอมแปลง แอบอ้าง หรือดัดแปลงเอกสารทางราชการโดยไม่ได้รับอนุญาต (โทษสถานกลาง-โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๑๙ ชักจูงกระทำผิดกฎหมาย</div>
-          <div class="article-content">การสมรู้ร่วมคิดหรือชักชวนให้ผู้อื่นกระทำผิดกฎหมายผ่านช่องทางออนไลน์ (โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๒๐ แสดงข้อความเสื่อมเสียต่อบุคคล</div>
-          <div class="article-content">การเผยแพร่ข้อความหรือเนื้อหาที่ก่อให้เกิดความเสื่อมเสียแก่บุคคลใด ทั้งทางตรงและทางอ้อมผ่านช่องทางออนไลน์ (โทษสถานเบา-โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๒๑ หมิ่นสถาบัน</div>
-          <div class="article-content">การกระทำหรือกล่าวคำใดๆ อันก่อให้เกิดความเสื่อมเสียต่อชาติ ศาสนา และพระมหากษัตริย์ (โทษสถานกลาง-โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๒๒ ยุยงสร้างความขัดแย้ง</div>
-          <div class="article-content">การกระทำหรือกล่าวคำใดๆ ทางช่องทางออนไลน์ อันก่อให้เกิดความแตกแยกหรือขัดแย้งในสังคม (โทษสถานกลาง-โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๒๓ ฉ้อโกงทางออนไลน์</div>
-          <div class="article-content">การหลอกลวงโดยใช้ช่องทางออนไลน์จนทำให้ผู้อื่นเสียทรัพย์สิน (โทษสถานกลาง-โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๒๔ แอบอ้างตัวตนทางออนไลน์</div>
-          <div class="article-content">การแอบอ้างเป็นบุคคลอื่นผ่านช่องทางออนไลน์โดยไม่ได้รับอนุญาต (โทษสถานกลาง-โทษสถานหนัก)</div>
-        </div>
-        <div class="article">
-          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
-          <div class="article-number">มาตรา ๒๕ ก่อความวุ่นวายในชุมชนออนไลน์</div>
-          <div class="article-content">การกระทำใดๆ ที่สร้างความเสียหายหรือความวุ่นวายเป็นวงกว้างภายในชุมชนออนไลน์ (โทษสถานกลาง-โทษสถานหนัก)</div>
-        </div>
-      </div>
-
-      <!-- SECTION 5 -->
       <div class="law-section" id="section5">
-        <h2 class="section-title">นโยบายรัฐมนตรีกระทรวงกลาโหม</h2>
-        <small>นโยบายรัฐมนตรีว่าการกระทรวงกลาโหม (ผู้ก่อตั้งและประธานบริหาร 86) เน้นการเสริมสร้างความมั่นคงของประเทศและพัฒนากองทัพ โดยยึดมั่นในสถาบันพระมหากษัตริย์และการปกครองในระบอบประชาธิปไตย</small>
-        <h2 class="section-title">หมวด ๑ : การบริหารราชการและความมั่นคง</h2>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๑.๑ กำกับดูแลหน่วยงานความมั่นคง</div><div class="article-content">รัฐมนตรีกลาโหมมีอำนาจสูงสุดในการควบคุม กำกับ และติดตามการปฏิบัติงานของกองทัพทุกเหล่าทัพ รวมถึงสำนักงานตำรวจแห่งชาติ และรัฐบาลพลเรือน</div></div>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๑.๒ การบูรณาการและประสานงาน</div><div class="article-content">ส่งเสริมการทำงานร่วมกันระหว่างกองทัพและตำรวจ เพื่อให้การรักษาความสงบเรียบร้อยและความมั่นคงเป็นไปอย่างมีประสิทธิภาพ</div></div>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๑.๓ การบริหารภาวะฉุกเฉิน</div><div class="article-content">รัฐมนตรีกลาโหมสามารถประกาศภาวะฉุกเฉิน และสั่งกำลังพล ยุทโธปกรณ์ หรือทรัพยากรเพื่อแก้ไขสถานการณ์ทันที</div></div>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๑.๔ การตรวจสอบและประเมินผล</div><div class="article-content">รัฐมนตรีกลาโหมมีสิทธิ์ตรวจสอบ ประเมิน และปรับปรุงการปฏิบัติงานของทุกหน่วยงานด้านความมั่นคง</div></div>
-        <h2 class="section-title">หมวด ๒ : การพัฒนากำลังพลและยุทธวิธี</h2>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๒.๑ การฝึกอบรมและพัฒนากำลังพล</div><div class="article-content">รัฐมนตรีกลาโหมสามารถกำหนดหลักสูตรฝึกอบรมพิเศษทั้งทหารและหน่วยงานตำรวจ</div></div>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๒.๒ การอนุมัติเลื่อนระดับชั้นยศ</div><div class="article-content">การเลื่อนระดับชั้นยศทุกกรณีจำเป็นต้องได้รับการลงนามรับทราบจากรัฐมนตรีกลาโหม ยกเว้นหน่วยงานตำรวจ</div></div>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๒.๓ การมอบโควต้าประจำเดือน</div><div class="article-content">รัฐมนตรีกลาโหมมีอำนาจมอบโควต้าประจำเดือนให้แก่หน่วยงานต่างๆ โดยต้องได้รับการลงนามรับทราบจากรัฐมนตรีกลาโหมทุกครั้ง</div></div>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๒.๔ การอนุมัติเลื่อนระดับชั้นยศในกิจกรรม</div><div class="article-content">การเลื่อนระดับชั้นยศที่เกิดขึ้นจากการจัดกิจกรรมต้องได้รับการลงนามรับทราบจากรัฐมนตรีกลาโหม ยกเว้นหน่วยงานตำรวจ</div></div>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๒.๕ การรับสมัครกองบัญชาการเหล่าทัพ</div><div class="article-content">รัฐมนตรีกลาโหมมีอำนาจในการพิจารณาคัดเลือกกองบัญชาการเหล่าทัพ และต้องได้รับการลงนามรับทราบจากรัฐมนตรีกลาโหมก่อนการแต่งตั้งทุกครั้ง</div></div>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๒.๖ อำนาจการพิจารณาเลื่อนขั้นกองบัญชาการกองทัพไทย</div><div class="article-content">รัฐมนตรีกลาโหมมีสิทธิ์เด็ดขาดในการพิจารณาเลื่อนขั้นตำแหน่งกองบัญชาการภายใต้สังกัดกองบัญชาการกองทัพไทย ดังนี้ กองบัญชาการกองทัพไทย กองบัญชาการกองทัพบก กองบัญชาการกองทัพเรือ และกองบัญชาการกองทัพอากาศ</div></div>
-        <h2 class="section-title">หมวด ๓ : การบริหารงบประมาณและทรัพยากรภายในกองทัพ</h2>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๓.๑ การจัดสรรงบประมาณความมั่นคง</div><div class="article-content">รัฐมนตรีว่าการกระทรวงกลาโหมมีอำนาจเบ็ดเสร็จและเด็ดขาดสูงสุดในการจัดทำและอนุมัติการจัดสรรงบประมาณ (Robux) ให้แก่หน่วยงานทุกเหล่าทัพ</div></div>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๓.๒ การควบคุมการใช้จ่ายและอำนาจสั่งพักหรือระงับงบประมาณ</div><div class="article-content">รัฐมนตรีฯ มีอำนาจสั่งพัก ระงับ หรือเรียกคืนการเบิกจ่ายงบประมาณ (Robux) ของหน่วยงานใดๆ ได้ทันที หากพบว่าหน่วยงานนั้นมีการใช้จ่ายที่ไม่โปร่งใสหรือไม่เป็นไปตามวัตถุประสงค์ที่กำหนด</div></div>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๓.๓ การรายงานงบประมาณ</div><div class="article-content">กำหนดให้จัดทำรายงานการใช้จ่าย Robux โดยแสดงรายละเอียดเหตุผลและความจำเป็นในการกำหนดอัตราเงินเดือน Robux ของกองบัญชาการแต่ละรายอย่างชัดเจน</div></div>
-        <div class="article"><button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button><div class="article-number">๓.๔ การปรับงบประมาณแบบรวมศูนย์</div><div class="article-content">รัฐมนตรีฯ มีอำนาจเต็มในการโยกย้ายและปรับลดสัดส่วนงบประมาณระหว่างเหล่าทัพ เพื่อนำไปจัดสรรใหม่ให้กับโครงการหรือกิจกรรมที่มีความจำเป็นเร่งด่วน</div></div>
-      </div>
-
-      <!-- SECTION 6 -->
-      <div class="law-section" id="section6">
         <h2 class="section-title">พระราชบัญญัติกฎระเบียบ พุทธศักราช ๒๕๖๙</h2>
         <h2 class="section-title">หมวด ๑ : บททั่วไป</h2>
         <div class="article">
@@ -1138,6 +705,409 @@
             ผู้ใดบังคับ ขู่เข็ญ ทั้งทางตรงและทางอ้อม ให้ผู้อื่นเปิดกล้องวิดีโอ หรือกระทำการใดๆ อันเป็นการรุกล้ำสิทธิความเป็นส่วนตัว ซึ่งก่อให้เกิดความหวาดกลัวหรือผลกระทบทางจิตใจ ให้ถือว่ากระทำผิดตามมาตรานี้<br>
             มีโทษ (ความผิดสถานหนัก)
           </div>
+        </div>
+      </div>
+
+      <div class="law-section" id="section4">
+        <h2 class="section-title">ประมวลกฎหมายไซเบอร์ พ.ศ. ๒๕๖๙</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑ ชื่อประมวลกฎหมาย</div>
+          <div class="article-content">ให้เรียกประมวลกฎหมายนี้ว่า "ประมวลกฎหมายไซเบอร์ พ.ศ. ๒๕๖๙"</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๒ วันที่บังคับใช้</div>
+          <div class="article-content">ให้ใช้ประมวลกฎหมายนี้ ตั้งแต่วันที่ ๕ มกราคม พุทธศักราช ๒๕๖๙ เป็นต้นไป</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๓ บทนิยามศัพท์</div>
+          <div class="article-content">
+            "การรักษาความมั่นคงปลอดภัยไซเบอร์" หมายความว่า มาตรการหรือการดำเนินการที่กำหนดขึ้น เพื่อป้องกัน รับมือ และลดความเสี่ยงจากภัยคุกคามทางไซเบอร์ทั้งจากภายในและภายนอกประเทศ อันกระทบต่อความมั่นคงของรัฐ ความมั่นคงทางทหารและตำรวจ และความสงบเรียบร้อยภายในประเทศ<br>
+            "ภัยคุกคามทางไซเบอร์" หมายความว่า การกระทำหรือการดำเนินการใดๆ โดยมิชอบ โดยใช้คอมพิวเตอร์หรือระบบคอมพิวเตอร์หรือโปรแกรมไม่พึงประสงค์ โดยมุ่งหมายให้เกิดการประทุษร้ายต่อระบบคอมพิวเตอร์ ข้อมูลคอมพิวเตอร์ หรือข้อมูลอื่นที่เกี่ยวข้อง อันเป็นภัยอันตรายที่จะก่อให้เกิดความเสียหายหรือส่งผลกระทบต่อการทำงานของระบบนั้นๆ
+          </div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๔ ดุลพินิจการบังคับใช้กฎหมาย</div>
+          <div class="article-content">ผู้ใดกระทำความผิดอย่างใด นอกจากที่บัญญัติไว้ในประมวลกฎหมายไซเบอร์นี้ ให้รับอาญาตามลักษณะจารีตประเพณีหรือตามดุลพินิจของศาล หากกฎหมายนี้มิได้บัญญัติไว้เป็นอย่างอื่น ให้นำคำพิพากษาของศาลรัฐธรรมนูญที่ถึงที่สุดแล้วมาใช้เป็นบรรทัดฐานในการตัดสินคดีอื่นๆ ได้โดยอนุโลม</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๕ หมายเรียกไซเบอร์</div>
+          <div class="article-content">หากหน่วยงานที่เกี่ยวข้องได้ทำการสืบสวนสอบสวนอาชญากรรมทางเทคโนโลยี และได้ออกหมายเรียกแล้ว หากผู้ต้องหายังไม่มาตามกำหนด ให้ถือว่าเป็นการหลบหนี มีโทษจำคุก และส่งเรื่องให้ศาลรัฐธรรมนูญดำเนินการต่อไป</div>
+        </div>
+        <h2 class="section-title">ภาค ๑ : การกำหนดประเภทอัตราโทษ</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๖ ความผิดสถานเบา</div>
+          <div class="article-content">
+            - ตักเตือน<br>
+            - บันทึกคดีความผิด<br>
+            - กระโดดตบ ไม่ต่ำกว่า ๕๐ แต่ไม่เกิน ๑๐๐<br>
+            - จำคุก ๕ นาที
+          </div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๗ ความผิดสถานกลาง</div>
+          <div class="article-content">
+            - ตักเตือน<br>
+            - บันทึกคดีความผิด<br>
+            - กระโดดตบ ไม่ต่ำกว่า ๑๐๐ แต่ไม่เกิน ๒๐๐<br>
+            - จำคุก ๑๐ นาที
+          </div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๘ ความผิดสถานหนัก</div>
+          <div class="article-content">- ให้เป็นไปตามดุลพินิจของศาลรัฐธรรมนูญ</div>
+        </div>
+        <h2 class="section-title">ภาค ๒ : ข้อบังคับต่างๆ</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๙ หมิ่นประมาท</div>
+          <div class="article-content">การกล่าวหรือกระทำการอันทำให้บุคคลอื่น กรม หรือหน่วยงานใดเกิดความเสื่อมเสียชื่อเสียง (โทษสถานเบา-โทษสถานกลาง)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๐ ใช้วาจาไม่เหมาะสมในหมู่คณะ</div>
+          <div class="article-content">การใช้ถ้อยคำที่ไม่สุภาพหรือไม่เหมาะสมในการสื่อสารระหว่างกัน (โทษสถานเบา-โทษสถานกลาง)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๑ ละเมิดสิทธิส่วนบุคคล</div>
+          <div class="article-content">การกระทำใดอันเป็นการละเมิดหรือก้าวก่ายสิทธิส่วนบุคคลของผู้อื่น (โทษสถานเบา-โทษสถานกลาง)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๒ นำข้อมูลอันเป็นเท็จเข้าสู่ระบบ</div>
+          <div class="article-content">การนำเข้าหรือเผยแพร่ข้อมูลอันเป็นเท็จเข้าสู่ระบบคอมพิวเตอร์หรือสื่อสาธารณะ อันอาจก่อให้เกิดความเสียหายแก่บุคคลหรือหน่วยงาน (โทษสถานเบา-โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๓ สร้างความเข้าใจผิด</div>
+          <div class="article-content">การนำเสนอข้อมูลหรือข้อความที่บิดเบือนความจริง อันก่อให้เกิดความเข้าใจผิดในหมู่ข้าราชการหรือสาธารณชน (โทษสถานเบา-โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๔ แบ่งปันสื่อที่ไม่เหมาะสม</div>
+          <div class="article-content">การเผยแพร่หรือส่งต่อเนื้อหาลามกอนาจาร สื่อที่ไม่เหมาะสม หรือเนื้อหาที่เกี่ยวข้องกับสิ่งเสพติดทุกประเภทผ่านช่องทางออนไลน์ (โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๕ ส่งสแปมข้อความ</div>
+          <div class="article-content">การส่งข้อความที่ไม่พึงประสงค์ ซ้ำๆ หรือไม่เกี่ยวข้องกับการปฏิบัติหน้าที่จนก่อให้เกิดความรำคาญหรือรบกวนผู้อื่น (โทษสถานเบา-โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๖ การบังคับขู่เข็ญ</div>
+          <div class="article-content">การบังคับ ขู่เข็ญ หรือกดดันทางช่องทางออนไลน์ เพื่อให้ผู้อื่นยินยอมกระทำการใดๆ อันไม่สมัครใจ ก่อให้เกิดความหวาดกลัวหรือความเดือดร้อน (โทษสถานกลาง-โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๗ แชร์ลิงก์ที่ไม่เหมาะสมหรือแมพที่ติด Blacklist</div>
+          <div class="article-content">การเผยแพร่หรือส่งต่อลิงก์ที่มีเนื้อหาไม่เหมาะสม หรือลิงก์ไปยังแมพที่ถูกขึ้นบัญชีดำ (Blacklist) (โทษสถานกลาง-โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๘ ปลอมแปลงเอกสาร</div>
+          <div class="article-content">การปลอมแปลง แอบอ้าง หรือดัดแปลงเอกสารทางราชการโดยไม่ได้รับอนุญาต (โทษสถานกลาง-โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๙ ชักจูงกระทำผิดกฎหมาย</div>
+          <div class="article-content">การสมรู้ร่วมคิดหรือชักชวนให้ผู้อื่นกระทำผิดกฎหมายผ่านช่องทางออนไลน์ (โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๒๐ แสดงข้อความเสื่อมเสียต่อบุคคล</div>
+          <div class="article-content">การเผยแพร่ข้อความหรือเนื้อหาที่ก่อให้เกิดความเสื่อมเสียแก่บุคคลใด ทั้งทางตรงและทางอ้อมผ่านช่องทางออนไลน์ (โทษสถานเบา-โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๒๑ หมิ่นสถาบัน</div>
+          <div class="article-content">การกระทำหรือกล่าวคำใดๆ อันก่อให้เกิดความเสื่อมเสียต่อชาติ ศาสนา และพระมหากษัตริย์ (โทษสถานกลาง-โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๒๒ ยุยงสร้างความขัดแย้ง</div>
+          <div class="article-content">การกระทำหรือกล่าวคำใดๆ ทางช่องทางออนไลน์ อันก่อให้เกิดความแตกแยกหรือขัดแย้งในสังคม (โทษสถานกลาง-โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๒๓ ฉ้อโกงทางออนไลน์</div>
+          <div class="article-content">การหลอกลวงโดยใช้ช่องทางออนไลน์จนทำให้ผู้อื่นเสียทรัพย์สิน (โทษสถานกลาง-โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๒๔ แอบอ้างตัวตนทางออนไลน์</div>
+          <div class="article-content">การแอบอ้างเป็นบุคคลอื่นผ่านช่องทางออนไลน์โดยไม่ได้รับอนุญาต (โทษสถานกลาง-โทษสถานหนัก)</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๒๕ ก่อความวุ่นวายในชุมชนออนไลน์</div>
+          <div class="article-content">การกระทำใดๆ ที่สร้างความเสียหายหรือความวุ่นวายเป็นวงกว้างภายในชุมชนออนไลน์ (โทษสถานกลาง-โทษสถานหนัก)</div>
+        </div>
+      </div>
+
+      <div class="law-section" id="section2">
+        <h2 class="section-title">พระราชบัญญัติว่าด้วยวินัย พุทธศักราช ๒๕๖๙</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑ ชื่อพระราชบัญญัติ</div>
+          <div class="article-content">"พระราชบัญญัติว่าด้วยวินัย พุทธศักราช ๒๕๖๙"</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๒ บังคับใช้</div>
+          <div class="article-content">ให้ใช้พระราชบัญญัตินี้ตั้งแต่วันประกาศในราชกิจจานุเบกษาเป็นต้นไป</div>
+        </div>
+        <h2 class="section-title">หมวด ๑ : ว่าด้วยวินัย</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๓ วินัยคือ</div>
+          <div class="article-content">วินัยของข้าราชการนั้น คือ การที่ข้าราชการทหารและตำรวจต้องประพฤติตามแบบธรรมเนียมของราชการ</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๔ วินัยคือสิ่งสำคัญที่สุดของข้าราชการ</div>
+          <div class="article-content">
+            วินัยเป็นหลักสำคัญที่สุดสำหรับข้าราชการทหารและตำรวจ เพราะฉะนั้นข้าราชการทุกคนจักต้องรักษาโดยเคร่งครัดอยู่เสมอ ผู้ใดฝ่าฝืนให้ถือว่าผู้นั้นกระทำผิด ตัวอย่างการกระทำผิดวินัย มีดังต่อไปนี้<br>
+            ๑. ดื้อดึง ขัดขืน หลีกเลี่ยง หรือละเลยไม่ปฏิบัติตามคำสั่งของผู้บังคับบัญชาเหนือตน<br>
+            ๒. ไม่รักษาระเบียบการเคารพระหว่างผู้ใหญ่ผู้น้อย<br>
+            ๓. ไม่รักษามารยาทให้ถูกต้องตามแบบธรรมเนียมของทหารและตำรวจ<br>
+            ๔. ก่อให้แตกความสามัคคีในหมู่ข้าราชการ<br>
+            ๕. เกียจคร้าน ละทิ้ง หรือเลินเล่อต่อหน้าที่ราชการ<br>
+            ๖. กล่าวคำเท็จหรือให้ข้อมูลที่บิดเบือนต่อผู้บังคับบัญชา<br>
+            ๗. ใช้กิริยาวาจาไม่สมควร หรือประพฤติไม่สมควร
+          </div>
+        </div>
+        <h2 class="section-title">หมวด ๒ : อำนาจลงทัณฑ์</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๕ ทัณฑ์ที่จะลงแก่ผู้กระทำผิด</div>
+          <div class="article-content">
+            ต่อวินัยดังกล่าวไว้ในหมวด ๑ นั้น ให้กำหนดเป็น ๓ สถาน คือ<br>
+            ๑. ภาคทัณฑ์<br>
+            ๒. ธำรงวินัย<br>
+            ๓. จำคุก
+          </div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๖ ความหมายของทัณฑ์แต่ละสถาน</div>
+          <div class="article-content">
+            ภาคทัณฑ์ คือ การลงโทษในกรณีที่มีเหตุควรปราณี โดยแสดงความผิดของผู้นั้นให้ปรากฏหรือให้ทำทัณฑ์บนไว้ เช่น บันทึกบัญชีวินัยเลว ซึ่งสามารถยื่นอุทธรณ์ได้<br>
+            ธำรงวินัย คือ การลงทัณฑ์ทางร่างกาย เช่น กระโดดตบ โดยต้องได้รับคำสั่งจากผู้มีอำนาจลงทัณฑ์โดยตรง<br>
+            จำคุก คือ การควบคุมตัวให้อยู่ในความดูแลของเรือนจำทหาร หรือห้องกักของสถานีตำรวจตามแต่กรณี
+          </div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๗ ผู้ที่มีอำนาจลงทัณฑ์</div>
+          <div class="article-content">
+            ผู้มีอำนาจบังคับบัญชาซึ่งลงทัณฑ์แก่ผู้กระทำผิดได้นั้น คือ<br>
+            ๑. ผู้บังคับบัญชาฝ่ายทหารและตำรวจ<br>
+            ๒. เจ้าพนักงานฝ่ายรัฐธรรมนูญ<br>
+            ๓. เจ้าพนักงานฝ่ายบังคับใช้กฎหมาย เช่น สารวัตรทหาร/สารวัตรตำรวจ เป็นต้น<br>
+            ๔. ผู้ที่ได้รับมอบอำนาจจาก ๓ ข้อข้างต้น ให้ทำได้เฉพาะขอบเขตที่กำหนดไว้เท่านั้น<br>
+            ๕. ผู้บังคับบัญชาระดับกรมหรือฝ่ายบริหาร สามารถลงทัณฑ์ได้เฉพาะบุคคลซึ่งอยู่ในสังกัดของตนเท่านั้น
+          </div>
+        </div>
+        <h2 class="section-title">หมวด ๓ : ระเบียบการแต่งกาย</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๘ เครื่องแบบหมายถึง</div>
+          <div class="article-content">
+            เครื่องแต่งกายทั้งหลายที่ได้กำหนดให้ข้าราชการทหารและตำรวจแต่ง เครื่องแบบย่อมประกอบด้วย หมวก เสื้อ กางเกง รองเท้า เครื่องหมายยศ เหล่า จำพวก สังกัด และอื่นๆ กับเครื่องประกอบต่างๆ โดยมีข้อบังคับในการแต่งเครื่องแบบดังนี้<br>
+            ๑. ข้าราชการทหาร/ตำรวจทุกนายต้องสวมเครื่องแบบตามสังกัดของตนทุกครั้งเมื่ออยู่ในเขตพื้นที่ราชการ (หากฝ่าฝืนมีโทษจำคุกไม่ต่ำกว่า ๑ วัน)<br>
+            ๒. พระราชวงศ์ และรัฐบาล สามารถแต่งเครื่องแบบทหารหรือตำรวจได้ พระราชวงศ์สามารถแต่งชุดไทยได้ และรัฐบาลสามารถแต่งชุดสูทได้ หากแต่งชุดอื่นที่ไม่ได้ระบุไว้ข้างต้น (กระโดดตบไม่ต่ำกว่า ๒๐ ครั้ง)<br>
+            ๓. ผู้ที่แต่งกายแล้วแอบอ้างว่าสังกัดหน่วยนั้นๆ โดยมิได้รับอนุญาต (มีโทษจำคุกไม่ต่ำกว่า ๑ วัน)<br>
+            ๔. กำหนดทรงผมข้าราชการทหาร/ตำรวจชาย ทรงผมห้ามยาวเกินหมวกเบเร่ต์หรือหม้อตาล ห้ามไว้ทรงผมยาว ทรงผมของแมพถือว่าเป็นทรงผมที่ถูกต้องที่สุด (หากฝ่าฝืนมีโทษจำคุกไม่ต่ำกว่า ๑ วัน)<br>
+            ๕. กำหนดทรงผมข้าราชการทหาร/ตำรวจหญิง ทรงผมห้ามยาวเกินลำคอ สามารถมัดรวบผมหรือไม่มัดรวบผมก็ได้ ทรงผมของแมพถือว่าเป็นทรงผมที่ถูกต้องที่สุด (หากฝ่าฝืนมีโทษจำคุกไม่ต่ำกว่า ๑ วัน)<br>
+            ๖. ข้าราชการทหาร/ตำรวจทั้งชายและหญิง ห้ามย้อมสีผมเป็นอันขาด ต้องเป็นสีดำโดยธรรมชาติเท่านั้น (หากฝ่าฝืนมีโทษจำคุกไม่ต่ำกว่า ๑ วัน)<br>
+            ๗. พระราชวงศ์ และรัฐบาล สามารถย้อมสีผมและสวมใส่ทรงผมใดก็ได้<br>
+            ๘. ข้าราชการทหาร/ตำรวจทุกนาย รวมถึงพระราชวงศ์และรัฐบาล ห้ามแต่งเครื่องประดับที่ผิดธรรมชาติของมนุษย์ปกติ เช่น หูแมว หางแมว ปีก เป็นต้น (กระโดดตบไม่ต่ำกว่า ๒๐ ครั้ง)
+          </div>
+        </div>
+        <h2 class="section-title">หมวด ๔ : ระเบียบการใช้คำสั่งพิเศษ (Commands)</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๙ ว่าด้วยระเบียบคำสั่งพิเศษ</div>
+          <div class="article-content">ว่าด้วยการใช้คำสั่งพิเศษ (Commands) โดยให้ใช้สำหรับการฝึก การจัดกิจกรรม การอำนวยความสะดวกในการปฏิบัติหน้าที่ และการกระทำที่เป็นประโยชน์ต่อหน่วยงานและกองทัพเท่านั้น โดยไม่ก่อให้เกิดความเดือดร้อนแก่ข้าราชการในสังกัด</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๐ ระเบียบการใช้คำสั่งพิเศษ</div>
+          <div class="article-content">
+            ว่าด้วยการใช้คำสั่งพิเศษ (Commands) โดยให้ใช้สำหรับการฝึก การจัดกิจกรรม การอำนวยความสะดวกในการปฏิบัติหน้าที่ และการกระทำที่เป็นประโยชน์ต่อหน่วยงานและกองทัพเท่านั้น คำสั่งพิเศษที่ไม่ได้ระบุไว้ในรายการที่กำหนด ถือว่าไม่ได้รับอนุญาตให้ใช้โดยปริยาย<br>
+            ๑. :h :m ต่างๆ คือ การประกาศแบบป็อปอัพ หากใช้ในทางที่ผิดอาทิเช่น :hr แว่นมานี่มา มีโทษดังนี้<br>
+            - ครั้งที่ ๑ ตักเตือน<br>
+            - ครั้งที่ ๒ ธำรงวินัย หรือ จำคุก<br>
+            - ครั้งที่ ๓ บันทึกบัญชีวินัยเลว หากร้ายแรง สามารถ ปลดการอนุมัติใช้คำสั่งพิเศษ<br>
+            - หากมีครั้งต่อๆไป ให้ขึ้นอยู่กับดุลพินิจของศาล<br>
+            ๒. :tp (someone) me คือการดึงตัวผู้เล่น กล่าวคือหากใช้ในทางที่ผิด อาทิเช่น :tp playerA me โดยไม่มีเหตุอันสมควร มีโทษดังนี้<br>
+            - ครั้งที่ ๑ ตักเตือน<br>
+            - ครั้งที่ ๒ ธำรงวินัย หรือ จำคุก<br>
+            - ครั้งที่ ๓ บันทึกบัญชีวินัยเลว หากร้ายแรง สามารถ ปลดการอนุมัติใช้คำสั่งพิเศษ<br>
+            - หากมีครั้งต่อๆไป ให้ขึ้นอยู่กับดุลพินิจของศาล<br>
+            ๓. :team การย้ายทีมหรือเหล่าสังกัด กล่าวคือหากใช้ในทางที่ผิด อาทิเช่น :team me กองบัญชาการ โดยที่ตนเองมิได้มีสิทธิ์อยู่ใน Team ของกองบัญชาการ<br>
+            - ครั้งที่ ๑ ตักเตือน<br>
+            - ครั้งที่ ๒ ธำรงวินัย จำคุก หรือ บันทึกบัญชีวินัยเลว<br>
+            - ครั้งที่ ๓ ปลดการอนุมัติใช้คำสั่งพิเศษ หรือ ลดอัตราชั้นยศ<br>
+            - หากมีครั้งต่อๆไป ให้ขึ้นอยู่กับดุลพินิจของศาล
+          </div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๐ วรรค (๑) ประเภทคำสั่งประกาศ</div>
+          <div class="article-content">
+            คำสั่งประกาศแบ่งออกเป็น ๓ ประเภท ดังต่อไปนี้<br><br>
+            (๑) คำสั่งหมวด :h ให้ใช้สำหรับการปฏิบัติการระยะประชิด (CQB) เท่านั้น รวมถึงการรายงานสถานการณ์ การแจ้งสกอร์ หรือการแสดงสัญลักษณ์ทางยุทธวิธี ห้ามนำไปใช้ในกิจกรรมอื่นที่ไม่เกี่ยวข้องกับการรบหรือการฝึกโดยเด็ดขาด<br><br>
+            (๒) คำสั่งหมวด :n ให้ใช้ได้เฉพาะเจ้าหน้าที่ในตำแหน่ง "ครูฝึกกรมยุทธ" เท่านั้น ใช้สำหรับการประกาศคำสั่ง ข้อชี้แจง หรือข้อมูลที่เกี่ยวข้องกับการฝึก การอบรม และกิจกรรมทางยุทธวิธี<br><br>
+            (๓) คำสั่งหมวด :m ให้ใช้ได้เฉพาะหน่วยงานระดับกองบัญชาการกองทัพบก และกองทัพไทย ใช้สำหรับการประกาศคำสั่งระดับสูง คำสั่งเร่งด่วน หรือข้อมูลที่มีผลกระทบต่อกำลังพลโดยรวม<br><br>
+            ผู้ใดฝ่าฝืนหรือไม่ปฏิบัติตามระเบียบนี้ ให้ถือเป็นความผิดทางวินัย โทษสำหรับผู้กระทำผิด ให้พิจารณาตามความร้ายแรงแห่งการกระทำ<br><br>
+            บทกำหนดโทษ<br>
+            (๑) ลงโทษทางวินัย โดยการธำรงวินัย (JJS) ตั้งแต่ ๑๐๐ ถึง ๒๐๐ ครั้ง หรือ<br>
+            (๒) จำคุกเป็นระยะเวลาไม่เกิน ๒๔ ชั่วโมง<br><br>
+            ในกรณีที่การกระทำผิดมีลักษณะร้ายแรง หรือกระทำซ้ำ ให้บันทึกประวัติเป็น "บัญชีวินัยเลว" และหากเห็นสมควร อาจมีคำสั่งลดอัตราชั้นยศ เพิกถอนสิทธิในการใช้คำสั่งประกาศ
+          </div>
+        </div>
+      </div>
+
+      <div class="law-section" id="section3">
+        <h2 class="section-title">รัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช ๒๕๖๙</h2>
+        <h2 class="section-title">หมวด ๑ : บททั่วไป</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑ ราชอาณาจักรเป็นหนึ่งเดียวแบ่งแยกมิได้</div>
+          <div class="article-content">แมพชีวิตในรั้วทหารไทยเป็นราชอาณาจักรอันหนึ่งอันเดียว จะแบ่งแยกมิได้</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๒ ระบอบการปกครอง</div>
+          <div class="article-content">แมพชีวิตในรั้วทหารไทยมีการปกครองระบอบประชาธิปไตยอันมีพระมหากษัตริย์ทรงเป็นประมุข</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๓ อำนาจอธิปไตย</div>
+          <div class="article-content">อำนาจอธิปไตยเป็นของปวงชนชาวแมพชีวิตในรั้วทหารไทย พระมหากษัตริย์ผู้ทรงเป็นประมุขทรงใช้อำนาจนั้นผ่านคณะรัฐมนตรี ตามบทบัญญัติแห่งรัฐธรรมนูญ</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๔ สิทธิเสรีภาพ</div>
+          <div class="article-content">ศักดิ์ศรีความเป็นมนุษย์ สิทธิ เสรีภาพ และความเสมอภาคของบุคคลย่อมได้รับความคุ้มครอง ปวงชนชาวไทยย่อมได้รับความคุ้มครองตามรัฐธรรมนูญนี้เสมอกัน</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๕ รัฐธรรมนูญเป็นกฎหมายสูงสุดของแมพ</div>
+          <div class="article-content">รัฐธรรมนูญเป็นกฎหมายสูงสุดของแมพ บทบัญญัติใดของกฎหมาย กฎ ข้อบังคับ หรือการกระทำใด ขัดหรือแย้งต่อรัฐธรรมนูญ บทบัญญัติหรือการกระทำนั้นเป็นอันใช้บังคับมิได้ เมื่อไม่มีบทบัญญัติแห่งรัฐธรรมนูญนี้บังคับแก่กรณีใด ให้กระทำการนั้นหรือวินิจฉัยกรณีนั้นไปตามประเพณีการปกครองของแมพ</div>
+        </div>
+        <h2 class="section-title">หมวด ๒ : พระมหากษัตริย์</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๖ ฐานะพระมหากษัตริย์</div>
+          <div class="article-content">องค์พระมหากษัตริย์ทรงดำรงอยู่ในฐานะผู้เล่นภายในแมพเท่านั้น ไม่สามารถกระทำการอันใดภายนอกแมพได้ และทรงอยู่ภายใต้ระเบียบและข้อบังคับภายในแมพทุกประการเช่นเดียวกับผู้เล่นอื่น</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๗ จอมพล</div>
+          <div class="article-content">พระมหากษัตริย์ทรงดำรงตำแหน่งจอมพล</div>
+        </div>
+        <h2 class="section-title">หมวด ๓ : สิทธิและเสรีภาพของแมพชีวิตในรั้วทหารไทย</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๘ สิทธิเสรีภาพของข้าราชการ</div>
+          <div class="article-content">
+            ๑. สิทธิขั้นพื้นฐานตามรัฐธรรมนูญ<br>
+            ทุกคนมีสิทธิและเสรีภาพตามที่รัฐธรรมนูญคุ้มครองไว้ หากกฎหมายไม่ได้บัญญัติห้าม ก็สามารถกระทำได้ แต่ต้องไม่กระทบต่อความมั่นคงของรัฐ ความสงบเรียบร้อย ศีลธรรมอันดี หรือสิทธิของผู้อื่น<br>
+            ๒. สิทธิที่กฎหมายลูกยังไม่ออก แต่ยังสามารถใช้ได้<br>
+            ถ้ารัฐธรรมนูญให้สิทธิไว้ แม้กฎหมายลูกยังไม่ประกาศใช้ บุคคลก็ยังคงใช้สิทธินั้นได้ตามเจตนารมณ์ของรัฐธรรมนูญ<br>
+            ๓. สามารถอ้างรัฐธรรมนูญเป็นข้อต่อสู้คดีได้<br>
+            หากถูกละเมิดสิทธิ สามารถนำบทบัญญัติรัฐธรรมนูญยื่นต่อศาลหรือใช้เป็นข้อต่อสู้คดีได้<br>
+            ๔. ผู้เสียหายมีสิทธิได้รับการเยียวยา<br>
+            หากถูกละเมิดสิทธิหรือได้รับความเสียหายจากการกระทำผิดของผู้อื่น มีสิทธิได้รับการช่วยเหลือหรือเยียวยาจากรัฐตามกฎหมาย
+          </div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๙ บุคคลย่อมเสมอกันด้วยกฎหมาย</div>
+          <div class="article-content">บุคคลย่อมเสมอกันในกฎหมาย มีสิทธิและเสรีภาพและได้รับความคุ้มครองตามกฎหมายเท่าเทียมกัน</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๐ สิทธิและเสรีภาพด้านร่างกาย</div>
+          <div class="article-content">บุคคลย่อมมีสิทธิและเสรีภาพในชีวิตและร่างกาย การจับและการคุมขังบุคคลจะกระทำมิได้ เว้นแต่มีคำสั่งหรือหมายของศาลหรือมีเหตุอย่างอื่นตามที่กฎหมายบัญญัติ</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๑ สิทธิประชาชนและข้าราชการ</div>
+          <div class="article-content">
+            ๑. มีสิทธิรับทราบและเข้าถึงข้อมูลหรือข่าวสารสาธารณะที่หน่วยงานของรัฐครอบครอง ตามที่กฎหมายบัญญัติ<br>
+            ๒. มีสิทธิเสนอเรื่องร้องทุกข์ต่อหน่วยงานของรัฐ และได้รับแจ้งผลการพิจารณาโดยไม่ชักช้า<br>
+            ๓. มีสิทธิฟ้องร้องหน่วยงานของรัฐให้รับผิดชอบจากการกระทำหรือละเว้นการกระทำของข้าราชการ ไม่ว่าจะดำรงตำแหน่งระดับใด
+          </div>
+        </div>
+        <h2 class="section-title">หมวด ๔ : หน้าที่ของรัฐ</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๒ รัฐต้องพิทักษ์รักษาชาติ</div>
+          <div class="article-content">รัฐต้องพิทักษ์รักษาไว้ซึ่งสถาบันพระมหากษัตริย์ เอกราช อธิปไตย บูรณภาพแห่งอาณาเขตและเขตที่มีสิทธิอธิปไตย เกียรติภูมิและผลประโยชน์ของชาติ ความมั่นคงของรัฐและความสงบเรียบร้อยของประชาชน เพื่อประโยชน์แห่งการนี้ รัฐต้องจัดให้มีการทหาร การตำรวจ การทูต และการข่าวกรองที่มีประสิทธิภาพ กำลังทหารและตำรวจให้ใช้เพื่อประโยชน์ในการพัฒนาประเทศด้วย</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๓ รัฐต้องดูแลในการปฏิบัติตามกฎหมาย</div>
+          <div class="article-content">รัฐต้องดูแลให้มีการปฏิบัติตามและบังคับใช้กฎหมายอย่างเคร่งครัด</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๔ ให้มีพระราชบัญญัติประกอบรัฐธรรมนูญ ดังต่อไปนี้</div>
+          <div class="article-content">
+            ๑. ประมวลกฎหมายอาญา พ.ศ. ๒๕๖๙<br>
+            ๒. พระราชบัญญัติว่าด้วยวินัย พุทธศักราช ๒๕๖๙<br>
+            ๓. ประมวลกฎหมายไซเบอร์ พ.ศ. ๒๕๖๙<br>
+            ๔. พระราชบัญญัติตำรวจแห่งชาติ พุทธศักราช ๒๕๖๘<br>
+            ๕. พระราชบัญญัติว่าด้วยกฎระเบียบภายในแมพ พุทธศักราช ๒๕๖๙
+          </div>
+        </div>
+        <h2 class="section-title">ส่วนที่ ๒ : ศาลรัฐธรรมนูญ</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๕ อำนาจบทบาท</div>
+          <div class="article-content">ศาลรัฐธรรมนูญถือเป็นศาลสูงสุดในการวินิจฉัยและบังคับใช้กฎหมายทั้งปวงภายในแมพ คำวินิจฉัยของศาลรัฐธรรมนูญให้ถือเป็นที่สุดและผูกพันทุกองค์กร</div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๖ เจ้าพนักงานฝ่ายรัฐธรรมนูญ</div>
+          <div class="article-content">
+            เจ้าพนักงานฝ่ายรัฐธรรมนูญประกอบด้วย<br>
+            ๑. ประธานศาลรัฐธรรมนูญ<br>
+            ๒. รองประธานศาลรัฐธรรมนูญ<br>
+            ๓. ตุลาการศาลรัฐธรรมนูญ<br>
+            ๔. กรรมการวิสามัญ<br>
+            ๕. เจ้าหน้าที่ตรวจสอบรัฐธรรมนูญ<br>
+            ๖. เจ้าหน้าที่รัฐธรรมนูญ<br>
+            ๗. เจ้าหน้าที่ธุรการรัฐธรรมนูญ<br>
+            ๘. คณะกรรมการกฎหมายรัฐธรรมนูญ
+          </div>
+        </div>
+        <h2 class="section-title">ส่วนที่ ๓ : คณะรัฐมนตรี</h2>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๗ การบริหารราชการแผ่นดิน</div>
+          <div class="article-content">
+            ในการบริหารราชการแผ่นดิน คณะรัฐมนตรีต้องดำเนินการตามบทบัญญัติแห่งรัฐธรรมนูญ กฎหมาย และนโยบายที่ได้แถลงไว้ต่อการประชุม และต้องปฏิบัติตามหลักเกณฑ์ต่อไปนี้<br>
+            ๑. ปฏิบัติหน้าที่และใช้อำนาจด้วยความซื่อสัตย์ สุจริต เสียสละ โปร่งใส รอบคอบ และระมัดระวัง เพื่อประโยชน์สูงสุดของราชอาณาจักรและประชาชนส่วนรวม<br>
+            ๒. รักษาวินัยในกิจการภายในราชอาณาจักรตามกฎหมายว่าด้วยวินัยอย่างเคร่งครัด<br>
+            ๓. ยึดถือและปฏิบัติตามหลักการบริหารกิจการบ้านเมืองที่ดีอย่างสม่ำเสมอ
+          </div>
+        </div>
+        <div class="article">
+          <button class="copy-btn" onclick="copyArticle(this)">คัดลอก</button>
+          <div class="article-number">มาตรา ๑๘ พฤติการณ์ผิดปกติ</div>
+          <div class="article-content">หากนายกรัฐมนตรีมีพฤติการณ์ผิดปกติหรือกระทำการใดๆ ที่สุ่มเสี่ยงต่อการเสื่อมเสียหรือเป็นภัยต่อราชอาณาจักร รัฐมนตรีว่าการกระทรวงกลาโหม ผู้บัญชาการทหารสูงสุด และผู้บัญชาการทหารบก มีอำนาจเรียกประชุมฉุกเฉิน โดยให้รองนายกรัฐมนตรีเป็นพยานในกระบวนการพ้นจากตำแหน่ง</div>
         </div>
       </div>
 
